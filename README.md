@@ -68,7 +68,7 @@ chmod +x dragon
 
 ```bash
 # Clone repository
-git clone https://github.com/youssefhamdi/Dragon_XSS.git
+git clone https://github.com/youseefhamdi/Dragon_XSS.git
 cd Dragon_XSS
 
 # Install dependencies
