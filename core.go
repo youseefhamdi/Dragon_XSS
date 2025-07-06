@@ -8,11 +8,11 @@ import (
     "time"
 )
 
-var payloads = []string{
-    "<script>alert('XSS')</script>",
-    "\"><img src=x onerror=alert('XSS')>",
-    "';alert(1);//",
+payloads := []string{
+    "<script>alert('XSS')</script>",                  // ✅ نص محاط بعلامات اقتباس
+    "\\u003Cscript\\u003Ealert(1)\\u003C/script\\u003E", // ✅ نص مع backslash مزدوج
 }
+
 
 func RunScan(url string) {
     fmt.Printf("Scanning target: %s\n", url)
